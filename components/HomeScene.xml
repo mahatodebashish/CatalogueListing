@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <component name="HomeScene" extends="Scene">
+
+        
+            <script type = "text/brightscript" uri = "pkg:/components/HomeScene.brs" />
+            <script type = "text/brightscript" uri = "pkg:/source/utils.brs" />
+        <!-- All nodes must be inside <children> headers -->
+<children>
+
+
+
+
+ 
+
+
+    <!-- RowList Node -->
+        <RowList
+            id= "RowList"
+            translation= "[0,50]"
+            itemComponentName= "PosterItem"
+            numRows= "4"
+            rowitemSize="[[351,197]]"
+
+            itemSize="[1400,170]"
+			itemSpacing="[40, 20]"
+			focusXOffset="[40]"
+			rowFocusAnimationStyle="floatingFocus"
+			rowLabelFont="font:MediumBoldSystemFont"
+			rowLabelColor=""
+			rowItemSize="[[210, 120]]"
+			rowItemSpacing="[[40, 20]]"
+			showRowLabel="true"
+			rowLabelOffset="[[40, 20]]"
+        />
+
+       
+        <Timer
+        id="timer"
+        repeat="false"
+        duration="5"
+        />
+    </children>
+    </component>
+    
